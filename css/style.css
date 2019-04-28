@@ -1,0 +1,129 @@
+body {
+  background-color: black;
+}
+
+.heart-rate {
+  width: 150px;
+  height: 73px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 200px;
+  top: 20vh;
+}
+
+.button-box {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 50px;
+  top: 15vh;
+}
+
+#startButton {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  color: red;
+  background-color: black;
+  border: black;
+}
+
+#fade-in {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  top: 0;
+  right: 0;
+  /* animation: heartRateIn 2.5s linear infinite; */
+}
+
+@keyframes heartRateIn {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  padding-left: 100px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 22%;
+  max-width: 22%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  box-sizing: border-box;
+  width: 100%;
+  visibility: hidden;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.footer {
+  width: 98%;
+  text-align: right;
+  position: relative;
+  bottom: 0;
+  margin-right: 30px;
+  margin-top: 50px;
+  height: 30px;
+  color: lightgray;
+  font-family: Arial;
+  font-size: 10px;
+}
+
+
+/* .fade-out {
+position: absolute;
+width: 120%;
+height: 100%;
+top: 0;
+left: -120%;
+animation: heartRateOut 2.5s linear infinite;
+background: rgba(255, 255, 255, 1);
+background: -moz-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+background: -o-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+background: -ms-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 80%, rgba(255, 255, 255, 0) 100%);
+} */
+
+/* @keyframes heartRateOut {
+0% {
+left: -120%;
+}
+30% {
+left: -120%;
+}
+100% {
+left: 0;
+}
+} */

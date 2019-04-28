@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>HEARTBEAT</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <audio id="player"  preload="auto" onended="showImage()" onplay="startPlaying()">
+    <source src="audio/audioProject_final02.mp3" type="audio/mpeg" color="white">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+
+    <div class="button-box">
+      <button id="startButton" onclick="startPlaying()">START</button>
+    </div>
+
+    <div class="heart-rate">
+      <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="150px" height="73px" viewBox="0 0 150 73" enable-background="new 0 0 150 73" xml:space="preserve">
+        <polyline fill="none" stroke="red" stroke-width="3" stroke-miterlimit="10" points="0,45.486 38.514,45.486 44.595,33.324 50.676,45.486 57.771,45.486 62.838,55.622 71.959,9 80.067,63.729 84.122,45.486 97.297,45.486 103.379,40.419 110.473,45.486 150,45.486"
+        />
+      </svg>
+
+      <div id="fade-in"></div>
+
+      <div class="replay"></div>
+
+      <!--   <div class="fade-out"></div> -->
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <img id="i1" src="img/1.jpg">
+        <img id="i2" src="img/2.jpg">
+        <img id="i3" src="img/3.jpg">
+        <img id="i4" src="img/4.jpg">
+      </div>
+      <div class="column">
+        <img id="i5" src="img/5.jpg">
+        <img id="i6" src="img/6.jpg">
+        <img id="i7" src="img/14.jpg">
+      </div>
+      <div class="column">
+        <img id="i8" src="img/8.jpg">
+        <img id="i9" src="img/9.jpg">
+        <img id="i10" src="img/10.jpg">
+      </div>
+      <div class="column">
+        <img id="i11" src="img/11.jpg">
+        <img id="i12" src="img/12.jpg">
+        <img id="i13" src="img/13.jpg">
+        <img id="i14" src="img/7.jpg">
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>
+        Created by Yeojin Jeannie Jung and Peixuan Lily Yu | Communication Lab Fall 2018 | New York University Shanghai
+      </p>
+    </div>
+
+    <script src="js/script.js" type="text/javascript"></script> >
+
+  </body>
+  </html>

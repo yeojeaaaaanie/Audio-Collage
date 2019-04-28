@@ -24,6 +24,9 @@ We first decided to do a project with heartbeat sound. The very first idea was t
 
 We watched several documentaries on Youtube about a daily routine of firefighters in order to create a virtual audio space of what they hear when they are fighting against fire and rescuing people. Accordingly, we created a storyline and listed out necessary audio fragments needed for each scene.
 
+Storyline: <br/>
+![Storyline](img/storyline.png)
+
 **6.	Technical Development** <br/>
 We divided the number of scenes and worked on creating the audio pieces individually using Audacity. Collected audio fragments are arranged in a way that can show the progress of story without storytelling. After finishing each audio pieces, we merged them all and put heartbeat signal on the background. The heart beating speeds up as the story reaches the climax and returns back to its normal speed at the end when the firefighter is done with his job and return to the fire station for rest.
 
